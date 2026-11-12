@@ -41,16 +41,16 @@ window.PORTFOLIO = {
 
 	// img: ảnh trong assets/images/ (chưa có file thì hiện khung chờ)
 	infographic: [
-		{ img: 'https://github.com/admin-mmo/portfolio-tramy/blob/main/assets/images/infographic-1.jpg.jpg?raw=true', url: 'https://www.facebook.com/share/p/1A8Bdy7HMz/' },
-		{ img: 'https://github.com/admin-mmo/portfolio-tramy/blob/main/assets/images/infographic-2.jpg.jpg?raw=true', url: 'https://www.facebook.com/share/p/1B9s3cSSj4/' },
-		{ img: 'https://github.com/admin-mmo/portfolio-tramy/blob/main/assets/images/infographic-3.jpg.jpg?raw=true', url: 'https://www.facebook.com/share/p/1B3nf8YjiJ/' }
+		{ img: 'assets/images/infographic-1.jpg.jpg', url: 'https://www.facebook.com/share/p/1A8Bdy7HMz/' },
+		{ img: 'assets/images/infographic-2.jpg.jpg', url: 'https://www.facebook.com/share/p/1B9s3cSSj4/' },
+		{ img: 'assets/images/infographic-3.jpg.jpg', url: 'https://www.facebook.com/share/p/1B3nf8YjiJ/' }
 	],
 
 	// ratio: 'h' = ngang 16:9, 'v' = dọc 9:16
 	video_ai: { ratio: 'h', brands: [ { name: '', items: [
-		{ title: 'Video AI 1', file: 'https://github.com/admin-mmo/portfolio-tramy/raw/refs/heads/main/assets/videos/video-ai-1.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/17SUKJiCKh/' },
-		{ title: 'Video AI 2', file: 'https://github.com/admin-mmo/portfolio-tramy/raw/refs/heads/main/assets/videos/video-ai-2.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/1P9WpMSxUZ/' },
-		{ title: 'Video AI 3', file: 'https://github.com/admin-mmo/portfolio-tramy/raw/refs/heads/main/assets/videos/video-ai-3.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/1FbfA1f86V/' }
+		{ title: 'Video AI 1', file: 'assets/videos/video-ai-1.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/17SUKJiCKh/' },
+		{ title: 'Video AI 2', file: 'assets/videos/video-ai-2.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/1P9WpMSxUZ/' },
+		{ title: 'Video AI 3', file: 'assets/videos/video-ai-3.mp4.mp4', embed: '', poster: '', url: 'https://www.facebook.com/share/r/1FbfA1f86V/' }
 	] } ] },
 
 	content: {
