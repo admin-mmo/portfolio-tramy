@@ -36,6 +36,41 @@
 		box.appendChild(s);
 	}
 
+	/* Cửa sổ xem lớn (lightbox): dùng cho video nhúng, chạy tốt trên điện thoại. */
+	function openLightbox(src, title, vertical) {
+		var o = document.createElement('div');
+		o.className = 'lightbox';
+		o.setAttribute('role', 'dialog');
+		o.setAttribute('aria-modal', 'true');
+		var close = document.createElement('button');
+		close.type = 'button';
+		close.className = 'lb-close';
+		close.setAttribute('aria-label', 'Đóng');
+		close.textContent = '✕';
+		var fr = document.createElement('div');
+		fr.className = 'lb-frame ' + (vertical ? 'v' : 'h');
+		var f = document.createElement('iframe');
+		f.src = src;
+		f.title = title || 'Video';
+		f.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+		f.allowFullscreen = true;
+		fr.appendChild(f);
+		o.appendChild(close);
+		o.appendChild(fr);
+		function shut() {
+			document.removeEventListener('keydown', onKey);
+			document.documentElement.classList.remove('lb-open');
+			o.remove();
+		}
+		function onKey(e) { if (e.key === 'Escape') shut(); }
+		o.addEventListener('click', function (e) { if (e.target === o) shut(); });
+		close.addEventListener('click', shut);
+		document.addEventListener('keydown', onKey);
+		document.documentElement.classList.add('lb-open');
+		document.body.appendChild(o);
+		close.focus();
+	}
+
 	function iframe(box, src, title) {
 		box.innerHTML = '';
 		var f = document.createElement('iframe');
@@ -46,6 +81,13 @@
 		f.allowFullscreen = true;
 		f.referrerPolicy = 'strict-origin-when-cross-origin';
 		box.appendChild(f);
+		var x = document.createElement('button');
+		x.type = 'button';
+		x.className = 'expand';
+		x.setAttribute('aria-label', 'Mở rộng video');
+		x.textContent = '⤢ Mở rộng';
+		x.addEventListener('click', function () { openLightbox(src, title, box.classList.contains('r916')); });
+		box.appendChild(x);
 	}
 
 	function mountImage(box, m) {
