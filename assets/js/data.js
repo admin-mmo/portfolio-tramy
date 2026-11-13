@@ -67,8 +67,8 @@ window.PORTFOLIO = {
 		] },
 		{ name: 'Chạm cảm xúc', items: [
 			{ title: 'Video 1', file: 'assets/videos/cham-1.mp4', embed: '', poster: '', url: 'https://www.tiktok.com/@chamvndayne/video/7591851258445712648' },
-			{ title: 'Video 2', file: 'assets/videos/cham-2.mp4', embed: '', poster: '', url: 'https://www.tiktok.com/@official.chamvn/video/7594432958547692821' },
-			{ title: 'Video 3', file: 'assets/videos/cham-3.mp4', embed: '', poster: '', url: 'https://www.tiktok.com/@official.chamvn/video/7592515682252672276' }
+			{ title: 'Video 2', file: 'assets/videos/cham-2.mp4', embed: '', poster: '', url: 'https://drive.google.com/file/d/1pb9OG_Wh_2QKfPJWNg0haV8BIZ8o1S09/view?usp=sharing' },
+			{ title: 'Video 3', file: 'assets/videos/cham-3.mp4', embed: '', poster: '', url: 'https://drive.google.com/file/d/15Av6UHvnEFtBgmHzAKm7qNBbQ79bM7L4/view?usp=sharing' }
 		] }
 	] },
 
